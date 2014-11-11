@@ -1,0 +1,38 @@
+=== Tinychat Shortcode ===
+Contributors: Dat Nguyen
+Donate link: 
+Tags: tinychat, tinychat pages, tinychat posts, tinychat shortcode
+Requires at least: 2.5
+Tested up to: 4.0
+Stable tag: 1.0
+
+Allow TinyChat In Post And Pages with simple Shortcode.
+
+== Description ==
+
+Allow TinyChat In Post And Pages with simple Shortcode.
+Has YouTube/SoundCloud for all.
+Requires users to be logged in to the wordpress site to chat.
+
+== Installation ==
+
+1. Upload the entire TinyChat-Shortcode folder to the /wp-content/plugins/ directory, or upload the .zip package through Plugins->Add New->Upload.
+2. Activate the plugin through the 'Plugins' menu in WordPress.
+3. For create new room, click on Tinychat option menu in WordPress left admin menu. Do not include space, special character... in Room name.
+4. Copy and paste the shortcode any where you want.
+
+== Screenshots ==
+
+* Tinychat Option Menu
+* Create New Room
+* Paste Code
+* Room Online
+
+== Notes ==
+
+This is chat room that is used on TinyChat. Room name < 15 character, include number and letter.
+
+== Changelog ==
+
+= 1.0 =
+* First version.
