@@ -23,10 +23,10 @@ Requires users to be logged in to the wordpress site to chat.
 
 == Screenshots ==
 
-* Tinychat Option Menu
-* Create New Room
-* Paste Code
-* Room Online
+1. Tinychat Option Menu
+2. Create New Room
+3. Paste Code
+4. Room Online
 
 == Notes ==
 
