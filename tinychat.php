@@ -213,7 +213,7 @@ if(! class_exists( "tinychat_class" ) ){
 				<input type="hidden" name="<?php echo self::$post_prefix?>[action]" value="snippet_add" />
 				<?php wp_nonce_field( "snippet_add", self::$post_prefix."[action_code]");?>
 				<p>
-					<label for="<?php echo self::$post_prefix?>[opt][snippet_title]">Room Title</label><input type="text" class="form-field" name="<?php echo self::$post_prefix?>[opt][snippet_title]" required placeholder="Room Title, e.g. Myroom" />
+					<label for="<?php echo self::$post_prefix?>[opt][snippet_title]">Room Title</label><input type="text" class="form-field" name="<?php echo self::$post_prefix?>[opt][snippet_title]" required placeholder="Room Title, e.g. Myroom" pattern="[a-zA-Z0-9]{3,30}" title="Room Name Contains ONLY Letters And Numbers Between 3 to 30 Character. Ex: acbd or 1234 or acbd123"/>
 				</p>
 				<p>
                 	<textarea style="display:none;" name="<?php echo self::$post_prefix?>[opt][snippet_code]" required class="code-field" placeholder="Your Code Room">Code</textarea>
@@ -230,7 +230,7 @@ if(! class_exists( "tinychat_class" ) ){
 				<?php wp_nonce_field( "snippet_edit".$snippet->id, self::$post_prefix."[verification]");?>
 				<input type="hidden" name="<?php echo self::$post_prefix?>[opt][snippet_id]" value="<?php echo esc_attr($snippet->id)?>" />
 				<p>
-					<label for="<?php echo self::$post_prefix?>[opt][snippet_title]">Room Name</label><input type="text" class="form-field" name="<?php echo self::$post_prefix?>[opt][snippet_title]" required placeholder="Room Title, e.g. MyRoom" value='<?php echo esc_attr(stripslashes($snippet->name))?>' />
+					<label for="<?php echo self::$post_prefix?>[opt][snippet_title]">Room Name</label><input type="text" class="form-field" name="<?php echo self::$post_prefix?>[opt][snippet_title]" required placeholder="Room Title, e.g. MyRoom" value='<?php echo esc_attr(stripslashes($snippet->name))?>' pattern="[a-zA-Z0-9]{3,30}" title="Room Name Contains ONLY Letters And Numbers Between 3 to 30 Character. Ex: acbd or 1234 or acbd123"/>
 				</p>
 					<input type="submit" value="Update Room" /> <a href="?page=<?php echo self::$menu_slug?>&<?php echo self::$post_prefix?>[action]=snippet_delete&<?php echo self::$post_prefix?>[action_code]=<?php echo wp_create_nonce( "snippet_delete")?>&<?php echo self::$post_prefix?>[opt][snippet_id]=<?php echo $snippet->id?>&<?php echo self::$post_prefix?>[verification]=<?php echo wp_create_nonce( "snippet_delete".$snippet->id)?>" class='delete-button' onclick="return confirm('Are you sure you want to delete this Room?')">Delete This Room</a>
 			</form>
