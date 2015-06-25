@@ -13,7 +13,7 @@ Allow TinyChat In Post And Pages with simple Shortcode.
 - Allow TinyChat In Post And Pages with simple Shortcode.
 Has YouTube/SoundCloud for all.
 Requires users to be logged in to the wordpress site to chat. <br>
-- With <a href="http://wp-plugins.seedceo.com/"> Pro </a>version, user will be automatically log into the chat room with nickname is 
+- With <a href="http://tinychat.link"> Pro </a>version, user will be automatically log into the chat room with nickname is 
 wordpress user's name.
 <br>
 
