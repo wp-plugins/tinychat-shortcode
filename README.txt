@@ -3,13 +3,14 @@ Contributors: Dat Nguyen
 Donate link: 
 Tags: tinychat, tinychat pages, tinychat posts, tinychat shortcode
 Requires at least: 2.5
-Tested up to: 4.0
+Tested up to: 4.2.3
 Stable tag: 1.0
 
 Allow TinyChat In Post And Pages with simple Shortcode.
 
 == Description ==
 
+- News @ 7/2015: Currently not work on mobile browser because tinychat.com disable it.
 - Allow TinyChat In Post And Pages with simple Shortcode.
 Has YouTube/SoundCloud for all.
 Requires users to be logged in to the wordpress site to chat. <br>
